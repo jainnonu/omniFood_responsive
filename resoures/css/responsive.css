@@ -1,0 +1,31 @@
+@media (max-width: 1090px) {
+
+  /* body{
+    width: 100%;
+  } */
+
+  header{
+    height: 50vh;
+  }
+
+  h1{
+    font-size: 200%;
+  }
+
+  .logo-white{
+    margin: 1% 1%;
+  }
+
+  .header-text{
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      width: 620px;
+      transform: translate(-25%,-25%);
+  }
+
+  .section-testimonials{
+    height: 98vh;
+  }
+
+}
