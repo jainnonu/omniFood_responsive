@@ -422,7 +422,7 @@ cite img {
 input[type=text],
 input[type=email],
 select,
-textarea {
+textarea{
     width: 100%;
     padding: 7px;
     border-radius: 5px;

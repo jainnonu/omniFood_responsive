@@ -55,8 +55,6 @@ $(document).ready(function(){
       }
     });
 
-// dad
-
     $(window).resize(function(){
       if($(window).width() < 1090)
       {
@@ -85,6 +83,22 @@ $(document).ready(function(){
       }
     });
 
+    $(window).resize(function(){
+      if($(window).width() < 1090)
+      {
+        $('form').children().children().removeClass('span-1-of-3');
+        $('form').children().children(2).removeClass('span-2-of-3');
+        $('form').children().children().addClass('span-1-of-2');
+        $('div.span-1-of-2').parent().css({"display":"","flex-direction":"","align-items":""});
+      }
+      else if($(window).width() > 1090)
+      {
+        $('form').children().children().addClass('span-1-of-3');
+        $('form').children().children(2).addClass('span-2-of-3');
+        $('form').children().children().removeClass('span-1-of-2');
+      }
+    });
+
     $('.js--scroll-to-plans').click(function(){
         $('html,body').animate({scrollTop: $('.js--section-plans').offset().top},1000);
     });
@@ -92,6 +106,7 @@ $(document).ready(function(){
     $('.js--scroll-to-features').click(function(){
         $('html,body').animate({scrollTop: $('.js--section-features').offset().top},1000);
     });
+
 
     // Select all links with hashes
     $('a[href*="#"]')

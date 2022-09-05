@@ -1,7 +1,7 @@
 @media (max-width: 1090px) {
 
   /* body{
-    width: 100%;
+  width: 100%;
   } */
 
   header{
@@ -35,11 +35,11 @@
   }
 
   .header-text{
-      position: absolute;
-      top: 25%;
-      left: 25%;
-      width: 800px;
-      transform: translate(-15%,-25%);
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 800px;
+    transform: translate(-15%,-25%);
   }
 
   .step-box:first-child{
@@ -68,12 +68,24 @@
 
   input[type=text],
   input[type=email],
+  input[type=checkbox],
   select,
   textarea {
-      width: 50%;
-      padding: 7px;
-      border-radius: 5px;
-      border: 1px solid #cccccc;
+    font-size: 1.6rem;
+    width: 90%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+  }
+
+  input[type=checkbox]{
+    display: inline-block;
+    float: left;
+  }
+
+  label{
+    font-size: 1.6rem;
+    width: 90%;
   }
 
 }
