@@ -9,23 +9,71 @@
   }
 
   h1{
-    font-size: 200%;
+    font-size: 250%;
+  }
+
+  h2{
+    font-size: 220%;
   }
 
   .logo-white{
     margin: 1% 1%;
   }
 
+  .btn:link, .btn:visited, input[type=submit] {
+    font-size: 2rem;
+  }
+
+  a:link,
+  a:visited{
+    font-size: 1.7rem;
+  }
+
+  .feature-text{
+    font-size: 140%;
+    text-align: center;
+  }
+
   .header-text{
       position: absolute;
       top: 25%;
       left: 25%;
-      width: 620px;
-      transform: translate(-25%,-25%);
+      width: 800px;
+      transform: translate(-15%,-25%);
+  }
+
+  .step-box:first-child{
+    text-align: center;
+  }
+
+  .step-box:last-child{
+    font-size: 1.8rem;
+    width: 80%;
+  }
+
+  .work-steps div{
+    height: 86px;
+    width: 86px;
+  }
+
+  .app-image img{
+    margin-left: 45%;
+    height: 80px;
+    width: auto;
   }
 
   .section-testimonials{
-    height: 98vh;
+    height: 115vh;
+  }
+
+  input[type=text],
+  input[type=email],
+  select,
+  textarea {
+      width: 50%;
+      padding: 7px;
+      border-radius: 5px;
+      border: 1px solid #cccccc;
   }
 
 }

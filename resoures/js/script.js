@@ -63,12 +63,25 @@ $(document).ready(function(){
         $('div.js--box-of-3-to-1').removeClass('col');
         $('div.js--box-of-3-to-1').addClass('column_4');
         $('div.js--box-of-3-to-1').parent().css({"display":"flex","flex-direction":"column","justify-content":"center"});
+        $('.plan-box ul').css({"font-size":"2.3rem"});
       }
       else if($(window).width() > 1090)
       {
         $('div.js--box-of-3-to-1').addClass('col');
         $('div.js--box-of-3-to-1').removeClass('column_4');
         $('div.js--box-of-3-to-1').parent().css({"display":"","flex-direction":"","justify-content":""});
+        $('.plan-box ul').css({"font-size":""});
+      }
+    });
+
+    $(window).resize(function(){
+      if($(window).width() < 1090)
+      {
+        $('div.span-1-of-2').parent().css({"display":"flex","flex-direction":"column","align-items":"center"});
+      }
+      else if($(window).width() > 1090)
+      {
+        $('div.span-1-of-2').parent().css({"display":"","flex-direction":"","align-items":""});
       }
     });
 
